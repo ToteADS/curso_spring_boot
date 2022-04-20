@@ -3,12 +3,11 @@ package com.tapp;
 import com.tapp.domain.entitity.Cliente;
 import com.tapp.domain.repositories.Clientes;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.GetMapping;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -21,32 +20,32 @@ public class VendasApplication {
     public CommandLineRunner init(@Autowired Clientes clientes) {
         return args -> {
             System.out.println("Salvando Clientes");
-            clientes.salvar(new Cliente("Tote"));
-            clientes.salvar(new Cliente("Nalita"));
-            clientes.salvar(new Cliente("Ana Clara"));
+            clientes.save(new Cliente("Tote"));
+            clientes.save(new Cliente("Nalita"));
+            clientes.save(new Cliente("Ana Clara"));
 
-            List<Cliente> todosClientes = clientes.obterTodos();
+            List<Cliente> todosClientes = clientes.findAll();
             todosClientes.forEach(System.out::println);
 
            System.out.println("Atualizando Clientes");
             todosClientes.forEach(c -> {
                 c.setNome(c.getNome() + " atualizado.");
-                clientes.atualizar(c);
+                clientes.save(c);
             });
-            todosClientes = clientes.obterTodos();
+            todosClientes = clientes.findAll();
             todosClientes.forEach(System.out::println);
 
             System.out.println("Buscando Clientes");
-            clientes.buscarPorNome("An").forEach(System.out::println);
+            clientes.findByNomeLike("An").forEach(System.out::println);
 
 
             System.out.println("Deletando Clientes");
-            clientes.obterTodos().forEach(c -> {
-                clientes.deletar(c);
+            clientes.findAll().forEach(c -> {
+                clientes.delete(c);
             });
 
 
-            todosClientes = clientes.obterTodos();
+            todosClientes = clientes.findAll();
             if(todosClientes.isEmpty()){
                 System.out.println("Nenhum Cliente Encontrado");
             }else{
