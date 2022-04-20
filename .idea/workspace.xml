@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1559f084-19d7-4720-b689-2a1d2b4be443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/ItemPedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Pedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,9 @@
     </option>
   </component>
   <component name="ProjectId" id="281havLZSzxxfulZKeSXFK3K1jM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -79,10 +83,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1650390972308" />
-    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1650396107702">
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1650466123253">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1650396107702" />
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1650466123253" />
     <state width="1557" height="206" key="GridCell.Tab.0.bottom" timestamp="1650465609218">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
