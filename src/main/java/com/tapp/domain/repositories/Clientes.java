@@ -1,5 +1,5 @@
 package com.tapp.domain.repositories;
-import com.tapp.domain.entitity.Cliente;
+import com.tapp.domain.entitities.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

@@ -1,4 +1,4 @@
-package com.tapp.domain.entitity;
+package com.tapp.domain.entitities;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1559f084-19d7-4720-b689-2a1d2b4be443" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/ItemPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Pedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/repositories/ItemsPedidos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/repositories/Pedidos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/repositories/Produtos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/VendasApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitities/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitities/ItemPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitities/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitities/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/repositories/Clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/repositories/Clientes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

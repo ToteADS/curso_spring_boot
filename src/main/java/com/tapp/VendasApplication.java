@@ -1,6 +1,6 @@
 package com.tapp;
 
-import com.tapp.domain.entitity.Cliente;
+import com.tapp.domain.entitities.Cliente;
 import com.tapp.domain.repositories.Clientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -9,8 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @SpringBootApplication
 @RestController
