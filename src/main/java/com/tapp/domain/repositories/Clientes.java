@@ -7,5 +7,7 @@ import java.util.List;
 
 public interface Clientes extends JpaRepository<Cliente,Integer> {
 
-    List<Cliente> findByNomeLike(String nome);
+    List<Cliente> findByNomeContaining(String nome);
+
+    boolean existsByNome(String nome);
 }
