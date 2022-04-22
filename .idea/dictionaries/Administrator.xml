@@ -4,6 +4,7 @@
       <w>cliente</w>
       <w>datasource</w>
       <w>jdbc</w>
+      <w>pedido</w>
       <w>testdb</w>
     </words>
   </dictionary>

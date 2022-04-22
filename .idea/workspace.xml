@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1559f084-19d7-4720-b689-2a1d2b4be443" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/entitity/Pedido.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,10 +84,11 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1650390972308" />
-    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1650467969964">
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1650648372747">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1650467969964" />
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/1600.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1650648372747" />
     <state width="1557" height="273" key="GridCell.Tab.0.bottom" timestamp="1650646095120">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
