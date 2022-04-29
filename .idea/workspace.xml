@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1559f084-19d7-4720-b689-2a1d2b4be443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/controller/ProdutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/controller/PedidoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/dto/ItemPedidoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/dto/PedidoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/service/PedidoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/service/impl/PedidosServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/VendasApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tapp/VendasApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tapp/VendasApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tapp/rest/controller/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tapp/rest/controller/ClienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="VendasApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -120,6 +123,10 @@
     <state width="1557" height="273" key="GridCell.Tab.0.right/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651170905974" />
     <state width="1557" height="273" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1650484961410" />
     <state width="1557" height="273" key="GridCell.Tab.0.right/1600.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1650658406314" />
+    <state x="301" y="72" key="SettingsEditor" timestamp="1651253088142">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="72" key="SettingsEditor/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651253088142" />
     <state x="496" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1650458905597">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
