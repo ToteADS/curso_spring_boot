@@ -2,6 +2,8 @@ package com.tapp.rest.controller;
 
 import com.tapp.domain.entitities.ItemPedido;
 import com.tapp.domain.entitities.Pedido;
+import com.tapp.domain.enums.StatusPedido;
+import com.tapp.rest.dto.AtualizacaoStatusPedidoDTO;
 import com.tapp.rest.dto.InformacaoItemPedidoDTO;
 import com.tapp.rest.dto.InformacoesPedidoDTO;
 import com.tapp.rest.dto.PedidoDTO;
@@ -39,6 +41,14 @@ public class PedidoController {
                 .orElseThrow(() -> new ResponseStatusException(NOT_FOUND, "Pedido não encontrado"));
     }
 
+    @PatchMapping("{id}")
+    @ResponseStatus(NO_CONTENT)
+    public void updateStatus(@PathVariable Integer id, @RequestBody AtualizacaoStatusPedidoDTO dto){
+        String novoStatus = dto.getNovoStatus();
+        service.atualizaStatus(id, StatusPedido.valueOf(novoStatus));
+
+    }
+
     private InformacoesPedidoDTO converter(Pedido pedido){
         return InformacoesPedidoDTO.builder()
                 .codigo(pedido.getId())
@@ -46,6 +56,7 @@ public class PedidoController {
                 .cpf(pedido.getCliente().getCpf())
                 .nomeCliente(pedido.getCliente().getNome())
                 .total(pedido.getTotal())
+                .status(pedido.getStatus().name())
                 .items(converter(pedido.getItens()))
                 .build();
 

@@ -4,10 +4,12 @@ import com.tapp.domain.entitities.Cliente;
 import com.tapp.domain.entitities.ItemPedido;
 import com.tapp.domain.entitities.Pedido;
 import com.tapp.domain.entitities.Produto;
+import com.tapp.domain.enums.StatusPedido;
 import com.tapp.domain.repositories.Clientes;
 import com.tapp.domain.repositories.ItemsPedidos;
 import com.tapp.domain.repositories.Pedidos;
 import com.tapp.domain.repositories.Produtos;
+import com.tapp.exception.PedidoNaoEncontradoException;
 import com.tapp.exception.RegraNegocioException;
 import com.tapp.rest.dto.ItemPedidoDTO;
 import com.tapp.rest.dto.PedidoDTO;
@@ -41,6 +43,7 @@ public class PedidosServiceImpl implements PedidoService {
         pedido.setTotal(dto.getTotal());
         pedido.setDataPedido(LocalDate.now());
         pedido.setCliente(cliente);
+        pedido.setStatus(StatusPedido.REALIZADO);
 
         List<ItemPedido> itemPedidos = converterItems(pedido, dto.getItems());
         repository.save(pedido);
@@ -54,6 +57,16 @@ public class PedidosServiceImpl implements PedidoService {
     @Override
     public Optional<Pedido> obterPedidoCompleto(Integer id) {
         return repository.findByIdFetchItens(id);
+    }
+
+    @Override
+    @Transactional
+    public void atualizaStatus(Integer id, StatusPedido statusPedido) {
+        repository.findById(id)
+                .map(pedido -> {
+                    pedido.setStatus(statusPedido);
+                    return repository.save(pedido);
+                }).orElseThrow(() -> new PedidoNaoEncontradoException());
     }
 
     private List<ItemPedido> converterItems(Pedido pedido ,List<ItemPedidoDTO> items){
