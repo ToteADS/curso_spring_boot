@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1559f084-19d7-4720-b689-2a1d2b4be443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/exception/RegraNegocioException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/ApiErrors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/controller/ApplicationControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/dto/InformacaoItemPedidoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/dto/InformacoesPedidoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/domain/repositories/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/domain/repositories/Pedidos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/rest/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/rest/controller/PedidoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/service/PedidoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tapp/service/impl/PedidosServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tapp/service/impl/PedidosServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tapp/domain/repositories/Pedidos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tapp/domain/repositories/Pedidos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tapp/rest/controller/PedidoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tapp/rest/controller/PedidoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tapp/service/PedidoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tapp/service/PedidoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tapp/service/impl/PedidosServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tapp/service/impl/PedidosServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +58,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tapp.rest.dto" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="VendasApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tapp.VendasApplication" />
@@ -86,40 +101,56 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1650390972308" />
-    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1651254471164">
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1651497197021">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651254471164" />
-    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1650467969964" />
+    <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1651497197021" />
     <state x="605" y="113" key="#com.intellij.ide.util.MemberChooser/1600.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1650648860824" />
-    <state width="1323" height="251" key="GridCell.Tab.0.bottom" timestamp="1651197282843">
-      <screen x="-1366" y="130" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.bottom" timestamp="1651499582471">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="251" key="GridCell.Tab.0.bottom/-1366.130.1366.728/0.0.1600.860@-1366.130.1366.728" timestamp="1651197282843" />
-    <state width="1557" height="273" key="GridCell.Tab.0.bottom/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651170905974" />
-    <state width="1557" height="273" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1650484961410" />
+    <state width="1557" height="309" key="GridCell.Tab.0.bottom/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651442645479" />
+    <state width="1557" height="276" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1651499582471" />
     <state width="1557" height="273" key="GridCell.Tab.0.bottom/1600.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1650658406314" />
-    <state width="1323" height="251" key="GridCell.Tab.0.center" timestamp="1651197282843">
-      <screen x="-1366" y="130" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.center" timestamp="1651499582471">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="251" key="GridCell.Tab.0.center/-1366.130.1366.728/0.0.1600.860@-1366.130.1366.728" timestamp="1651197282843" />
-    <state width="1557" height="273" key="GridCell.Tab.0.center/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651170905974" />
-    <state width="1557" height="273" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1650484961410" />
+    <state width="1557" height="309" key="GridCell.Tab.0.center/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651442645478" />
+    <state width="1557" height="276" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1651499582471" />
     <state width="1557" height="273" key="GridCell.Tab.0.center/1600.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1650658406314" />
-    <state width="1323" height="251" key="GridCell.Tab.0.left" timestamp="1651197282843">
-      <screen x="-1366" y="130" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.left" timestamp="1651499582471">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="251" key="GridCell.Tab.0.left/-1366.130.1366.728/0.0.1600.860@-1366.130.1366.728" timestamp="1651197282843" />
-    <state width="1557" height="273" key="GridCell.Tab.0.left/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651170905974" />
-    <state width="1557" height="273" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1650484961410" />
+    <state width="1557" height="309" key="GridCell.Tab.0.left/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651442645478" />
+    <state width="1557" height="276" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1651499582471" />
     <state width="1557" height="273" key="GridCell.Tab.0.left/1600.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1650658406314" />
-    <state width="1323" height="251" key="GridCell.Tab.0.right" timestamp="1651197282843">
-      <screen x="-1366" y="130" width="1366" height="728" />
+    <state width="1557" height="276" key="GridCell.Tab.0.right" timestamp="1651499582471">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="251" key="GridCell.Tab.0.right/-1366.130.1366.728/0.0.1600.860@-1366.130.1366.728" timestamp="1651197282843" />
-    <state width="1557" height="273" key="GridCell.Tab.0.right/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651170905974" />
-    <state width="1557" height="273" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1650484961410" />
+    <state width="1557" height="309" key="GridCell.Tab.0.right/-1366.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1651442645478" />
+    <state width="1557" height="276" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1651499582471" />
     <state width="1557" height="273" key="GridCell.Tab.0.right/1600.130.1366.728/0.0.1600.860@0.0.1600.860" timestamp="1650658406314" />
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1651499582472">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1651499582472" />
+    <state width="1557" height="276" key="GridCell.Tab.1.center" timestamp="1651499582471">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1651499582471" />
+    <state width="1557" height="276" key="GridCell.Tab.1.left" timestamp="1651499582471">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1651499582471" />
+    <state width="1557" height="276" key="GridCell.Tab.1.right" timestamp="1651499582471">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1651499582471" />
     <state x="301" y="72" key="SettingsEditor" timestamp="1651253088142">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
